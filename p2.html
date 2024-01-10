@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TripTok-Book Now</title>
+  <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+    <div>
+        <a href="p.html"><img src="triptok.png" class="header"></a>
+    </div>
+    <div class="banner-highlights">
+    <h2>Book your dream destination!!</h2>
+    
+  <form action="http://localhost/SNTIPROJECT/Login.php" method="post">
+    
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+     
+        <label for="contact">Contact No.:</label>
+        <input type="contact" id="contact" name="contact" placeholder="Enter your contact number" required>
+    
+        <label for="number">Duration:</label>
+        <input type="number" id="number" name="number" placeholder="Enter number of days" required>
+      
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select destination</option>
+          <option value="paris">Paris</option>
+          <option value="singapore">Singapore</option>
+          <option value="london">London</option>
+          <option value="new-york">New York</option>
+          <option value="malaysia">Malaysia </option>
+          <option value="hong-kong">Hong Kong</option>
+          <option value="washignton">Washington</option>
+          <option value="euorpe">Euorpe</option>
+          <option value="goa">Goa</option>
+          <option value="kashmir">Kashmir</option>
+          <option value="sikkim">Sikkim</option>
+          <option value="rajasthan">Rajasthan</option>
+        </select>
+     
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+    </form>
+    <div> <button class="button" onclick="showMessage()">SUBMIT</button>
+        <div id="messageContainer" class="message-container">
+          <div class="message">Successful!!&#129321&#129321 Wish you a happy journey..</div>
+        </div></div>
+  </div>
+    <script>
+    function showMessage() {
+      var messageContainer = document.getElementById("messageContainer");
+      messageContainer.classList.toggle("show-message");
+    }
+  </script>
+</body>
+</html>

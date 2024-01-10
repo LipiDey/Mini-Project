@@ -1,0 +1,96 @@
+/* CSS styles */
+body 
+{
+  font-family: Arial, sans-serif;
+  background-image:url(log1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.header {
+    width: 10%;
+    padding: 20px;
+    margin-left: 50px;  
+    color:blanchedalmond;  
+    cursor: pointer;
+}
+.header:hover
+{
+    animation: fly 2s linear infinite;
+} 
+.banner-highlights
+{
+background: rgba(0,0,0,0.7);
+text-align: left;
+color: paleturquoise;
+max-width: 500px;
+margin: 15px auto;
+padding: 30px;
+border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+    display: block; 
+    margin: 0;
+    padding: 5px;
+    margin-bottom: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="contact"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  color: grey;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid rgb(202, 105, 202);
+}
+
+button:hover {
+cursor: pointer;
+background: #e8cf84;
+color: #463a07;  
+}
+
+  .button {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #ffbf00;
+    color: hwb(0 100% 0%);
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 90px;
+  }
+
+  .message-container {
+    position: relative;
+    display: none;
+    margin-top: 10px;
+  }
+   .message {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .show-message{
+    display: block;
+  }
